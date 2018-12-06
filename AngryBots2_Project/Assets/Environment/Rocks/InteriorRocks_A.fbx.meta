@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 54aa74597a4c34d4d8ce4c4b9b0da35e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: InteriorRocks
+    100002: //RootNode
+    100004: InteriorRocks_A
+    100006: pasted__Rock
+    100008: pasted__Rock1
+    100010: pasted__Rock11
+    100012: pasted__Rock15
+    100014: pasted__Rock2
+    100016: pasted__Rock3
+    100018: pasted__Rock4
+    100020: pasted__Rock5
+    100022: pasted__Rock6
+    100024: pasted__Rock7
+    100026: polySurface6054
+    100028: polySurface6055
+    100030: polySurface6056
+    100032: polySurface6057
+    100034: polySurface6058
+    400000: InteriorRocks
+    400002: //RootNode
+    400004: InteriorRocks_A
+    400006: pasted__Rock
+    400008: pasted__Rock1
+    400010: pasted__Rock11
+    400012: pasted__Rock15
+    400014: pasted__Rock2
+    400016: pasted__Rock3
+    400018: pasted__Rock4
+    400020: pasted__Rock5
+    400022: pasted__Rock6
+    400024: pasted__Rock7
+    400026: polySurface6054
+    400028: polySurface6055
+    400030: polySurface6056
+    400032: polySurface6057
+    400034: polySurface6058
+    2300000: pasted__Rock
+    2300002: pasted__Rock1
+    2300004: pasted__Rock11
+    2300006: pasted__Rock15
+    2300008: pasted__Rock2
+    2300010: pasted__Rock3
+    2300012: pasted__Rock4
+    2300014: pasted__Rock5
+    2300016: pasted__Rock6
+    2300018: pasted__Rock7
+    2300020: polySurface6054
+    2300022: polySurface6055
+    2300024: polySurface6056
+    2300026: polySurface6057
+    2300028: polySurface6058
+    3300000: pasted__Rock
+    3300002: pasted__Rock1
+    3300004: pasted__Rock11
+    3300006: pasted__Rock15
+    3300008: pasted__Rock2
+    3300010: pasted__Rock3
+    3300012: pasted__Rock4
+    3300014: pasted__Rock5
+    3300016: pasted__Rock6
+    3300018: pasted__Rock7
+    3300020: polySurface6054
+    3300022: polySurface6055
+    3300024: polySurface6056
+    3300026: polySurface6057
+    3300028: polySurface6058
+    4300000: pasted__Rock
+    4300002: pasted__Rock1
+    4300004: pasted__Rock7
+    4300006: pasted__Rock6
+    4300008: pasted__Rock11
+    4300010: polySurface6057
+    4300012: polySurface6054
+    4300014: polySurface6055
+    4300016: polySurface6056
+    4300018: pasted__Rock5
+    4300020: pasted__Rock2
+    4300022: pasted__Rock4
+    4300024: pasted__Rock3
+    4300026: polySurface6058
+    4300028: pasted__Rock15
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CliffRock_A_mat
+    second: {fileID: 2100000, guid: 0401502e6f4fecd44a9dc9eec66b1f75, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

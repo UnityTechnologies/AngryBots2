@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 8a422026b656f4441a091974f290a20d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: pasted__Box023
+    100002: pasted__Box024
+    100004: pasted__Box025
+    100006: pasted__Box026
+    100008: pasted__Box027
+    100010: pasted__Box028
+    100012: pasted__Box029
+    100014: pasted__Box030
+    100016: pasted__Box031
+    100018: pasted__Box032
+    100020: PerimeterRocks
+    100022: PerimeterRocks_C
+    100024: //RootNode
+    400000: pasted__Box023
+    400002: pasted__Box024
+    400004: pasted__Box025
+    400006: pasted__Box026
+    400008: pasted__Box027
+    400010: pasted__Box028
+    400012: pasted__Box029
+    400014: pasted__Box030
+    400016: pasted__Box031
+    400018: pasted__Box032
+    400020: PerimeterRocks
+    400022: //RootNode
+    400024: PerimeterRocks_C
+    2300000: pasted__Box023
+    2300002: pasted__Box024
+    2300004: pasted__Box025
+    2300006: pasted__Box026
+    2300008: pasted__Box027
+    2300010: pasted__Box028
+    2300012: pasted__Box029
+    2300014: pasted__Box030
+    2300016: pasted__Box031
+    2300018: pasted__Box032
+    3300000: pasted__Box023
+    3300002: pasted__Box024
+    3300004: pasted__Box025
+    3300006: pasted__Box026
+    3300008: pasted__Box027
+    3300010: pasted__Box028
+    3300012: pasted__Box029
+    3300014: pasted__Box030
+    3300016: pasted__Box031
+    3300018: pasted__Box032
+    4300000: pasted__Box029
+    4300002: pasted__Box026
+    4300004: pasted__Box025
+    4300006: pasted__Box027
+    4300008: pasted__Box024
+    4300010: pasted__Box023
+    4300012: pasted__Box028
+    4300014: pasted__Box031
+    4300016: pasted__Box030
+    4300018: pasted__Box032
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CliffRock_C_mat
+    second: {fileID: 2100000, guid: 7e375aa94207514448c9fdf5097cba06, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

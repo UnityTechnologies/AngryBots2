@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: f006ec061b9bbb84ab9cd130248b8405
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: pasted__Rock10
+    100002: pasted__Rock13
+    100004: pasted__Rock14
+    100006: pasted__Rock16
+    100008: pasted__Rock17
+    100010: pasted__Rock9
+    100012: PerimeterRocks
+    100014: PerimeterRocks_A
+    100016: //RootNode
+    400000: pasted__Rock10
+    400002: pasted__Rock13
+    400004: pasted__Rock14
+    400006: pasted__Rock16
+    400008: pasted__Rock17
+    400010: pasted__Rock9
+    400012: PerimeterRocks
+    400014: PerimeterRocks_A
+    400016: //RootNode
+    2100000: CliffRock_A_mat
+    2300000: pasted__Rock10
+    2300002: pasted__Rock13
+    2300004: pasted__Rock14
+    2300006: pasted__Rock16
+    2300008: pasted__Rock17
+    2300010: pasted__Rock9
+    3300000: pasted__Rock10
+    3300002: pasted__Rock13
+    3300004: pasted__Rock14
+    3300006: pasted__Rock16
+    3300008: pasted__Rock17
+    3300010: pasted__Rock9
+    4300000: pasted__Rock10
+    4300002: pasted__Rock9
+    4300004: pasted__Rock13
+    4300006: pasted__Rock14
+    4300008: pasted__Rock16
+    4300010: pasted__Rock17
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CliffRock_A_mat
+    second: {fileID: 2100000, guid: 0401502e6f4fecd44a9dc9eec66b1f75, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 6cc25772cddf45146953377498bcae80
+timeCreated: 1516931815
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: EnemySpider
+    100004: EnemySpider_A_LB_leg
+    100006: EnemySpider_A_LF_leg
+    100008: EnemySpider_A_RB_leg
+    100010: EnemySpider_A_RF_leg
+    100012: EnemySpider_B_LB_leg
+    100014: EnemySpider_B_LF_leg
+    100016: EnemySpider_B_RB_leg
+    100018: EnemySpider_B_RF_leg
+    100020: EnemySpider_body
+    100022: EnemySpider_C_LB_leg
+    100024: EnemySpider_C_LF_leg
+    100026: EnemySpider_C_RB_leg
+    100028: EnemySpider_C_RF_leg
+    100030: EnemySpider_LB_leg
+    100032: EnemySpider_LF_leg
+    100034: EnemySpider_main_root
+    100036: EnemySpider_RB_leg
+    100038: EnemySpider_RF_leg
+    100040: EnemySpider_waist
+    400000: //RootNode
+    400002: EnemySpider
+    400004: EnemySpider_A_LB_leg
+    400006: EnemySpider_A_LF_leg
+    400008: EnemySpider_A_RB_leg
+    400010: EnemySpider_A_RF_leg
+    400012: EnemySpider_B_LB_leg
+    400014: EnemySpider_B_LF_leg
+    400016: EnemySpider_B_RB_leg
+    400018: EnemySpider_B_RF_leg
+    400020: EnemySpider_body
+    400022: EnemySpider_C_LB_leg
+    400024: EnemySpider_C_LF_leg
+    400026: EnemySpider_C_RB_leg
+    400028: EnemySpider_C_RF_leg
+    400030: EnemySpider_LB_leg
+    400032: EnemySpider_LF_leg
+    400034: EnemySpider_main_root
+    400036: EnemySpider_RB_leg
+    400038: EnemySpider_RF_leg
+    400040: EnemySpider_waist
+    2100000: blinn5
+    2300000: EnemySpider_A_LB_leg
+    2300002: EnemySpider_A_LF_leg
+    2300004: EnemySpider_A_RB_leg
+    2300006: EnemySpider_A_RF_leg
+    2300008: EnemySpider_B_LB_leg
+    2300010: EnemySpider_B_LF_leg
+    2300012: EnemySpider_B_RB_leg
+    2300014: EnemySpider_B_RF_leg
+    2300016: EnemySpider_body
+    2300018: EnemySpider_C_LB_leg
+    2300020: EnemySpider_C_LF_leg
+    2300022: EnemySpider_C_RB_leg
+    2300024: EnemySpider_C_RF_leg
+    2300026: EnemySpider_waist
+    3300000: EnemySpider_A_LB_leg
+    3300002: EnemySpider_A_LF_leg
+    3300004: EnemySpider_A_RB_leg
+    3300006: EnemySpider_A_RF_leg
+    3300008: EnemySpider_B_LB_leg
+    3300010: EnemySpider_B_LF_leg
+    3300012: EnemySpider_B_RB_leg
+    3300014: EnemySpider_B_RF_leg
+    3300016: EnemySpider_body
+    3300018: EnemySpider_C_LB_leg
+    3300020: EnemySpider_C_LF_leg
+    3300022: EnemySpider_C_RB_leg
+    3300024: EnemySpider_C_RF_leg
+    3300026: EnemySpider_waist
+    4300000: EnemySpider_waist
+    4300002: EnemySpider_body
+    4300004: EnemySpider_A_RB_leg
+    4300006: EnemySpider_B_RB_leg
+    4300008: EnemySpider_C_RB_leg
+    4300010: EnemySpider_A_LB_leg
+    4300012: EnemySpider_B_LB_leg
+    4300014: EnemySpider_C_LB_leg
+    4300016: EnemySpider_A_RF_leg
+    4300018: EnemySpider_B_RF_leg
+    4300020: EnemySpider_C_RF_leg
+    4300022: EnemySpider_A_LF_leg
+    4300024: EnemySpider_B_LF_leg
+    4300026: EnemySpider_C_LF_leg
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn5
+    second: {fileID: 2100000, guid: e17b8ab313c734bc79119b70e019624d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
