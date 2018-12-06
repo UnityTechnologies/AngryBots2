@@ -30,17 +30,15 @@ MonoBehaviour:
   m_ShadowCascades: 1
   m_Cascade2Split: 0.25
   m_Cascade4Split: {x: 0.067, y: 0.2, z: 0.467}
+  m_ShadowDepthBias: 1
+  m_ShadowNormalBias: 1
   m_SoftShadowsSupported: 1
   m_SupportsDynamicBatching: 1
-  m_MixedLightingSupported: 1
-  m_SavedXRConfig:
-    renderScale: 1
-    viewportScale: 1
-    useOcclusionMesh: 1
-    occlusionMaskScale: 1
+  m_MixedLightingSupported: 0
   m_ShadowType: 1
   m_LocalShadowsSupported: 1
   m_LocalShadowsAtlasResolution: 4096
   m_MaxPixelLights: 8
   m_ShadowAtlasResolution: 4096
   m_ResourcesAsset: {fileID: 11400000, guid: aac5a08c32552a14c89394b703f1978a, type: 2}
+  m_ShaderVariantLogLevel: 0
