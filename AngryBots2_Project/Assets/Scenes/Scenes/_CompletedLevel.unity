@@ -90,7 +90,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000002, guid: b82a9410e141f4d9a91414b81284443b,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2403,7 +2403,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0.43867922, g: 0.9753161, b: 1, a: 1}
-  m_Intensity: 20.570002
+  m_Intensity: 40
   m_Range: 14.95
   m_SpotAngle: 95
   m_CookieSize: 10
@@ -2620,7 +2620,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 0.0028924954, g: 0.471207, b: 0.6132076, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 0.3
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -4568,12 +4568,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc5a16bc358655946a0244145fda2f9c, type: 3}
---- !u!82 &500589942 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 860069947254954118, guid: bfe5fb299aa28b6469d665745ad07a23,
-    type: 3}
-  m_PrefabInstance: {fileID: 9125879845847699625}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &505918103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8465,7 +8459,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.96382284, g: 1, b: 0.627451, a: 1}
-  m_Intensity: 10.05
+  m_Intensity: 20
   m_Range: 7.44
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -8820,12 +8814,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 648471019}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &814387865 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 7070899025543208387, guid: bfe5fb299aa28b6469d665745ad07a23,
-    type: 3}
-  m_PrefabInstance: {fileID: 9125879845847699625}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &819968662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7033243969484710107, guid: 14e4931ed5a71a14ab1ddb4f674667f3,
@@ -9174,7 +9162,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0.5411765, g: 1, b: 0.69274706, a: 1}
-  m_Intensity: 12.266668
+  m_Intensity: 24
   m_Range: 6.08
   m_SpotAngle: 120
   m_CookieSize: 10
@@ -9482,7 +9470,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875252466}
-  m_LocalRotation: {x: 0.104425594, y: 0.87769413, z: -0.4111682, w: 0.22291061}
+  m_LocalRotation: {x: 0.10442561, y: 0.87769413, z: -0.41116816, w: 0.22291066}
   m_LocalPosition: {x: -8.86239, y: 8.318239, z: 13.265258}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -14892,7 +14880,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.5411765, g: 0.76530266, b: 1, a: 1}
-  m_Intensity: 30.26499
+  m_Intensity: 60
   m_Range: 10.33
   m_SpotAngle: 109
   m_CookieSize: 10
@@ -16303,7 +16291,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496275636}
-  m_LocalRotation: {x: 0.104425594, y: 0.87769413, z: -0.4111682, w: 0.22291061}
+  m_LocalRotation: {x: 0.10442561, y: 0.87769413, z: -0.41116816, w: 0.22291066}
   m_LocalPosition: {x: -4.521, y: 12.219999, z: 13.768}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -46260,11 +46248,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_Prefab
       objectReference: {fileID: 0}
-    - target: {fileID: 860069947254954118, guid: bfe5fb299aa28b6469d665745ad07a23,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.8
-      objectReference: {fileID: 0}
     - target: {fileID: 2539910503024735077, guid: bfe5fb299aa28b6469d665745ad07a23,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46325,15 +46308,5 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1496275639}
-    - target: {fileID: 4977531690419389660, guid: bfe5fb299aa28b6469d665745ad07a23,
-        type: 3}
-      propertyPath: spawnAudioSource
-      value: 
-      objectReference: {fileID: 500589942}
-    - target: {fileID: 4977531690419389660, guid: bfe5fb299aa28b6469d665745ad07a23,
-        type: 3}
-      propertyPath: spawnParticles
-      value: 
-      objectReference: {fileID: 814387865}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfe5fb299aa28b6469d665745ad07a23, type: 3}
