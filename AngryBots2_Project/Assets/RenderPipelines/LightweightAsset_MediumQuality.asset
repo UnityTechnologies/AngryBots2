@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf2edee5c58d82540a51f03df9d42094, type: 3}
-  m_Name: LightweightAsset_HighQuality
+  m_Name: LightweightAsset_MediumQuality
   m_EditorClassIdentifier: 
   k_AssetVersion: 4
   m_RequireDepthTexture: 0
@@ -20,11 +20,11 @@ MonoBehaviour:
   m_MSAA: 2
   m_RenderScale: 1
   m_MainLightRenderingMode: 1
-  m_MainLightShadowsSupported: 1
-  m_MainLightShadowmapResolution: 1024
+  m_MainLightShadowsSupported: 0
+  m_MainLightShadowmapResolution: 2048
   m_AdditionalLightsRenderingMode: 1
   m_AdditionalLightsPerObjectLimit: 4
-  m_AdditionalLightShadowsSupported: 1
+  m_AdditionalLightShadowsSupported: 0
   m_AdditionalLightsShadowmapResolution: 2048
   m_ShadowDistance: 30
   m_ShadowCascades: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
   m_Cascade4Split: {x: 0.067, y: 0.2, z: 0.467}
   m_ShadowDepthBias: 1
   m_ShadowNormalBias: 1
-  m_SoftShadowsSupported: 1
+  m_SoftShadowsSupported: 0
   m_SupportsDynamicBatching: 1
   m_MixedLightingSupported: 0
   m_ShadowType: 1

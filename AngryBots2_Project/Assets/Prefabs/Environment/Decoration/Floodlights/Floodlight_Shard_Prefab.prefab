@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3716000650741555395}
   - component: {fileID: 3740674349050703403}
   - component: {fileID: 3732833489291151147}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Floodlight_Shard_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 0
+  m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

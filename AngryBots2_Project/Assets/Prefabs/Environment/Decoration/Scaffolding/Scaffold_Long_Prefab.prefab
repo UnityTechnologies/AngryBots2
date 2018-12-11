@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7033243969484710107}
   - component: {fileID: 7058053406646871093}
   - component: {fileID: 7050425443225757183}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Scaffold_Long_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1.5
+  m_ScaleInLightmap: 0.1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

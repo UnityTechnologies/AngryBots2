@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2310490523704417771}
   - component: {fileID: 2334991807308085045}
   - component: {fileID: 2327311318953632871}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Floodlight_Base_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 0.67
+  m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

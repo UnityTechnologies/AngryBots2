@@ -7,16 +7,26 @@ using UnityEngine.Experimental.Rendering.LightweightPipeline;
 
 public class DebugCanvasManager : MonoBehaviour
 {
-    [Header("References")]
+    [Header("General References")]
     public Canvas debugWindow;
     public GameObject fpsDisplay;
     public GameObject postProcessingVolumes;
-    public GameObject LWRPLowDisplay;
-    public GameObject LWRPHighDisplay;
 
-    [Header("LWRP Assets")]
-    public LightweightRenderPipelineAsset LWRPLowQualityAsset;
-    public LightweightRenderPipelineAsset LWRPHighQualityAsset;
+    
+
+    [System.Serializable]
+    public struct LWRPAssetSettings
+    {
+        public string qualityName;
+        public LightweightRenderPipelineAsset qualityRenderPipelineAsset;
+        public GameObject qualitySelectedDisplay;
+        public string qualityInfo;
+    }
+
+    [Header("LWRP Asset Switch Settings")]
+    public LWRPAssetSettings[] lwrpAssetSettings;
+    private int currentLWRPAssetID = 2; // High
+    public Text currentLWRPAssetInfo;
 
     void Start()
     {
@@ -28,7 +38,7 @@ public class DebugCanvasManager : MonoBehaviour
     {
         debugWindow.enabled = false;
         fpsDisplay.SetActive(false);
-        LWRPLowDisplay.SetActive(false);
+        //LWRPLowDisplay.SetActive(false);
     }
 
     public void ToggleDebugWindow(bool newState)
@@ -49,23 +59,23 @@ public class DebugCanvasManager : MonoBehaviour
     public void SwitchLWRPAsset(int newAssetID)
     {
 
-        //0 = Low
-        //1 = High
+        //0 = Low - No Additional Lights, No Realtime Shadows, No HDR
+        //1 = Medium - Additional Lights, No Realtime Shadows, HDR
+        //2 = High - Additional Lights, Realtime Shadows, HDR
 
-        switch(newAssetID)
-        {
-            case 0:
-                GraphicsSettings.renderPipelineAsset = LWRPLowQualityAsset;
-                LWRPLowDisplay.SetActive(true);
-                LWRPHighDisplay.SetActive(false);
-                break;
+        GraphicsSettings.renderPipelineAsset = lwrpAssetSettings[newAssetID].qualityRenderPipelineAsset;
+        UpdateLWRPAssetUI(newAssetID);
+    }
 
-            case 1:
-                GraphicsSettings.renderPipelineAsset = LWRPHighQualityAsset;
-                LWRPLowDisplay.SetActive(false);
-                LWRPHighDisplay.SetActive(true);
-                break;
-        }
+    void UpdateLWRPAssetUI(int newAssetID)
+    {
+        lwrpAssetSettings[currentLWRPAssetID].qualitySelectedDisplay.SetActive(false);
+        currentLWRPAssetID = newAssetID;
+        lwrpAssetSettings[currentLWRPAssetID].qualitySelectedDisplay.SetActive(true);
+
+        currentLWRPAssetInfo.text = lwrpAssetSettings[currentLWRPAssetID].qualityInfo;
+
+
     }
 
 
