@@ -6988,11 +6988,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Red_Long_Prefab
       objectReference: {fileID: 0}
-    - target: {fileID: 2633751680725404607, guid: c4ba7119099ebda49b58a911e944f9d6,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2637968484238318821, guid: c4ba7119099ebda49b58a911e944f9d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9652,11 +9647,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pipe_Red_Long_Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 2633751680725404607, guid: c4ba7119099ebda49b58a911e944f9d6,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2637968484238318821, guid: c4ba7119099ebda49b58a911e944f9d6,
         type: 3}
@@ -13036,11 +13026,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Red_Elbow_Prefab
       objectReference: {fileID: 0}
-    - target: {fileID: 4228575609495327101, guid: 4b84ad32888ff4440849e1425c0e5574,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 4231786149360756441, guid: 4b84ad32888ff4440849e1425c0e5574,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14208,7 +14193,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875252466}
-  m_LocalRotation: {x: 0.10442559, y: 0.87769413, z: -0.41116816, w: 0.22291061}
+  m_LocalRotation: {x: 0.1044256, y: 0.87769413, z: -0.41116816, w: 0.22291064}
   m_LocalPosition: {x: -12.39139, y: 8.318239, z: 16.677258}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -18585,11 +18570,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pipe_Red_Long_Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 2633751680725404607, guid: c4ba7119099ebda49b58a911e944f9d6,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2637968484238318821, guid: c4ba7119099ebda49b58a911e944f9d6,
         type: 3}
@@ -23641,11 +23621,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Red_Short_Prefab
       objectReference: {fileID: 0}
-    - target: {fileID: 6095413047503734364, guid: 137d451dd8b154a45939144e1a3aac69,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 6089091900817074194, guid: 137d451dd8b154a45939144e1a3aac69,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25346,7 +25321,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496275636}
-  m_LocalRotation: {x: 0.10442559, y: 0.87769413, z: -0.41116816, w: 0.22291061}
+  m_LocalRotation: {x: 0.1044256, y: 0.87769413, z: -0.41116816, w: 0.22291064}
   m_LocalPosition: {x: -8.05, y: 12.219999, z: 17.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -25838,11 +25813,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pipe_Red_Elbow_Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 4228575609495327101, guid: 4b84ad32888ff4440849e1425c0e5574,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 4231786149360756441, guid: 4b84ad32888ff4440849e1425c0e5574,
         type: 3}
@@ -28034,7 +28004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1583400040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29658,10 +29628,10 @@ RectTransform:
   m_Father: {fileID: 1622753646}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -509.99, y: 16.5}
-  m_SizeDelta: {x: 411.59, y: 56.21}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 290.01, y: -433.5}
+  m_SizeDelta: {x: 411.59, y: 56.20999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634666402
 MonoBehaviour:
@@ -52723,7 +52693,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
+  m_ScaleInLightmap: 0.1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
