@@ -45,7 +45,7 @@ public class BlurGrabPass : MonoBehaviour, IAfterOpaquePass
             {
                 currentBlurAmount = m_BlurAmount;
                 m_grabPass.UpdateBlurAmount(currentBlurAmount);
-                Debug.Log("Blur Amount");
+
             }
         } 
     }
@@ -92,6 +92,7 @@ public class GrabPassImpl : ScriptableRenderPass
             buf.GetTemporaryRT(screenCopyID, opaqueDesc, FilterMode.Bilinear);
             buf.Blit(m_ColorHandle.Identifier(), screenCopyID);
 
+            //Downscale by 2
             opaqueDesc.width /= 2;
             opaqueDesc.height /= 2;
 

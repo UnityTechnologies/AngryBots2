@@ -12,15 +12,12 @@ public class DebugCanvasManager : MonoBehaviour
     public GameObject fpsDisplay;
     public GameObject postProcessingVolumes;
 
-    
-
     [System.Serializable]
     public struct LWRPAssetSettings
     {
         public string qualityName;
         public LightweightRenderPipelineAsset qualityRenderPipelineAsset;
         public GameObject qualitySelectedDisplay;
-        public string qualityInfo;
     }
 
     [Header("LWRP Asset Switch Settings")]
@@ -59,22 +56,25 @@ public class DebugCanvasManager : MonoBehaviour
     public void SwitchLWRPAsset(int newAssetID)
     {
 
-        //0 = Low - No Additional Lights, No Realtime Shadows, No HDR
-        //1 = Medium - Additional Lights, No Realtime Shadows, HDR
-        //2 = High - Additional Lights, Realtime Shadows, HDR
-
         GraphicsSettings.renderPipelineAsset = lwrpAssetSettings[newAssetID].qualityRenderPipelineAsset;
         UpdateLWRPAssetUI(newAssetID);
+
     }
 
     void UpdateLWRPAssetUI(int newAssetID)
     {
+
         lwrpAssetSettings[currentLWRPAssetID].qualitySelectedDisplay.SetActive(false);
         currentLWRPAssetID = newAssetID;
         lwrpAssetSettings[currentLWRPAssetID].qualitySelectedDisplay.SetActive(true);
 
-        currentLWRPAssetInfo.text = lwrpAssetSettings[currentLWRPAssetID].qualityInfo;
+        
+        LightweightRenderPipelineAsset asset = GraphicsSettings.renderPipelineAsset as LightweightRenderPipelineAsset;
 
+        string assetInfoString =
+            "HDR: " + asset.supportsHDR;
+
+        currentLWRPAssetInfo.text = assetInfoString;
 
     }
 

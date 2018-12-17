@@ -19,7 +19,7 @@ namespace UnityEngine.Experimental.Rendering.LightweightPipeline
         [System.Serializable]
         public class PlanarReflectionSettings
         {
-            public ResolutionMulltiplier m_ResolutionMultiplier = ResolutionMulltiplier.Third;
+            public ResolutionMulltiplier m_ResolutionMultiplier = ResolutionMulltiplier.Full;
             public float m_ClipPlaneOffset = 0.07f;
             public LayerMask m_ReflectLayers = -1;
         }
