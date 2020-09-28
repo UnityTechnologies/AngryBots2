@@ -1,11 +1,10 @@
 ﻿using System;
 using Unity.Mathematics;
-using UnityEngine.Rendering;
 
-namespace UnityEngine.Experimental.Rendering.LightweightPipeline
+namespace UnityEngine.Rendering.Universal
 {
     [ImageEffectAllowedInSceneView]
-    public class PlanerReflections : MonoBehaviour, IBeforeCameraRender
+    public class PlanerReflections : MonoBehaviour
     {
         [System.Serializable]
         public enum ResolutionMulltiplier
@@ -34,8 +33,13 @@ namespace UnityEngine.Experimental.Rendering.LightweightPipeline
         private int2 m_TextureSize = new int2(256, 128);
         private RenderTexture m_ReflectionTexture = null;
         
-        
+
         private int2 m_OldReflectionTextureSize;
+
+        void OnEnable()
+        {
+            RenderPipelineManager.beginCameraRendering += ExecuteBeforeCameraRender;
+        }
 
         // Cleanup all the objects we possibly have created
         void OnDisable()
@@ -49,6 +53,8 @@ namespace UnityEngine.Experimental.Rendering.LightweightPipeline
             {
                 DestroyImmediate(m_ReflectionTexture);
             }
+
+            RenderPipelineManager.beginCameraRendering -= ExecuteBeforeCameraRender;
         }
         
         private void UpdateCamera(Camera src, Camera dest)
@@ -179,8 +185,8 @@ namespace UnityEngine.Experimental.Rendering.LightweightPipeline
 
         private Camera CreateMirrorObjects(Camera currentCamera)
         {
-            LightweightRenderPipelineAsset lwAsset = (LightweightRenderPipelineAsset) GraphicsSettings.renderPipelineAsset;
-            var resMulti = lwAsset.renderScale * GetScaleValue();
+            UniversalRenderPipelineAsset asset = UniversalRenderPipeline.asset;
+            var resMulti = asset.renderScale * GetScaleValue();
             m_TextureSize.x = (int) Mathf.Pow(2, Mathf.RoundToInt(Mathf.Log(currentCamera.pixelWidth * resMulti, 2)));
             m_TextureSize.y = (int) Mathf.Pow(2, Mathf.RoundToInt(Mathf.Log(currentCamera.pixelHeight * resMulti, 2)));
             // Reflection render texture
@@ -203,9 +209,9 @@ namespace UnityEngine.Experimental.Rendering.LightweightPipeline
             GameObject go =
                 new GameObject("Planar Refl Camera id" + GetInstanceID() + " for " + currentCamera.GetInstanceID(),
                     typeof(Camera), typeof(Skybox));
-            LWRPAdditionalCameraData lwrpCamData =
-                go.AddComponent(typeof(LWRPAdditionalCameraData)) as LWRPAdditionalCameraData;
-            lwrpCamData.renderShadows = false; // turn off shadows for the reflection camera
+            UniversalAdditionalCameraData cameraData =
+                go.AddComponent(typeof(UniversalAdditionalCameraData)) as UniversalAdditionalCameraData;
+            cameraData.renderShadows = false; // turn off shadows for the reflection camera
             var reflectionCamera = go.GetComponent<Camera>();
             reflectionCamera.transform.SetPositionAndRotation(transform.position, transform.rotation);
             reflectionCamera.targetTexture = m_ReflectionTexture;
@@ -218,25 +224,20 @@ namespace UnityEngine.Experimental.Rendering.LightweightPipeline
             return reflectionCamera;
         }
 
-        public void ExecuteBeforeCameraRender(
-            LightweightRenderPipeline pipelineInstance,
-            ScriptableRenderContext context,
-            Camera camera)
+        public void ExecuteBeforeCameraRender(ScriptableRenderContext context, Camera camera)
         {
-
             if (!enabled)
                 return;
-            
+
             GL.invertCulling = true;
             RenderSettings.fog = false;
             var bias = QualitySettings.lodBias;
             QualitySettings.lodBias = bias * 0.25f;
-            
+
             UpdateReflectionCamera(camera);
 
-            CullResults cullResults = new CullResults();
-            LightweightRenderPipeline.RenderSingleCamera(pipelineInstance, context, m_ReflectionCamera, ref cullResults);
-            
+            UniversalRenderPipeline.RenderSingleCamera(context, m_ReflectionCamera);
+
             GL.invertCulling = false;
             RenderSettings.fog = true;
             QualitySettings.lodBias = bias;

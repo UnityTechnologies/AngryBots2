@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
-using UnityEngine.Experimental.Rendering.LightweightPipeline;
+using UnityEngine.Rendering.Universal;
 
 public class DebugCanvasManager : MonoBehaviour
 {
@@ -13,29 +11,27 @@ public class DebugCanvasManager : MonoBehaviour
     public GameObject postProcessingVolumes;
 
     [System.Serializable]
-    public struct LWRPAssetSettings
+    public struct UniversalAssetSettings
     {
         public string qualityName;
-        public LightweightRenderPipelineAsset qualityRenderPipelineAsset;
+        public UniversalRenderPipelineAsset qualityRenderPipelineAsset;
         public GameObject qualitySelectedDisplay;
     }
 
     [Header("LWRP Asset Switch Settings")]
-    public LWRPAssetSettings[] lwrpAssetSettings;
-    private int currentLWRPAssetID = 2; // High
-    public Text currentLWRPAssetInfo;
+    public UniversalAssetSettings[] lwrpAssetSettings;
+    private int currentURPAssetID = 2; // High
+    public Text currentURPAssetInfo;
 
     void Start()
     {
         HideUI();
-        
     }
 
     void HideUI()
     {
         debugWindow.enabled = false;
         fpsDisplay.SetActive(false);
-        //LWRPLowDisplay.SetActive(false);
     }
 
     public void ToggleDebugWindow(bool newState)
@@ -64,17 +60,17 @@ public class DebugCanvasManager : MonoBehaviour
     void UpdateLWRPAssetUI(int newAssetID)
     {
 
-        lwrpAssetSettings[currentLWRPAssetID].qualitySelectedDisplay.SetActive(false);
-        currentLWRPAssetID = newAssetID;
-        lwrpAssetSettings[currentLWRPAssetID].qualitySelectedDisplay.SetActive(true);
+        lwrpAssetSettings[currentURPAssetID].qualitySelectedDisplay.SetActive(false);
+        currentURPAssetID = newAssetID;
+        lwrpAssetSettings[currentURPAssetID].qualitySelectedDisplay.SetActive(true);
 
-        
-        LightweightRenderPipelineAsset asset = GraphicsSettings.renderPipelineAsset as LightweightRenderPipelineAsset;
+
+        UniversalRenderPipelineAsset asset = UniversalRenderPipeline.asset;
 
         string assetInfoString =
             "HDR: " + asset.supportsHDR;
 
-        currentLWRPAssetInfo.text = assetInfoString;
+        currentURPAssetInfo.text = assetInfoString;
 
     }
 

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
-using UnityEngine.Experimental.UIElements;
-using UnityEditor.Experimental.UIElements;
-using UnityEngine.Experimental.UIElements.StyleEnums;
-using Object = UnityEngine.Object;
-using UnityEngine.Experimental.Rendering.LightweightPipeline;
+using UnityEngine.UIElements;
+using UnityEditor.UIElements;
+using UnityEngine.Rendering.Universal;
 
 public class LWRPAssetSwitcherEditor : EditorWindow
 {
@@ -23,9 +19,9 @@ public class LWRPAssetSwitcherEditor : EditorWindow
 
     public void OnEnable()
     {
-        var root = this.GetRootVisualContainer();
+        var root = rootVisualElement;
 
-        var LWRPAssetInputs = new VisualElement()
+        var urpAssetInputs = new VisualElement()
         {
             style =
             {
@@ -34,29 +30,27 @@ public class LWRPAssetSwitcherEditor : EditorWindow
         };
         
     
-        LWRPAssetInputs.Add(new Label()
+        urpAssetInputs.Add(new Label()
         {
             text = "High Quality:"
                 
         });
 
-        LWRPAssetInputs.Add(new ObjectField()
+        urpAssetInputs.Add(new ObjectField()
         {
-            objectType = typeof(LightweightRenderPipelineAsset),
+            objectType = typeof(UniversalRenderPipelineAsset),
             style = 
             {
                 width = 300
             }
-                
         });
 
-        LWRPAssetInputs.Add(new Toggle()
+        urpAssetInputs.Add(new Toggle()
         {
 
         });
 
-        root.Add(LWRPAssetInputs);
-              
+        root.Add(urpAssetInputs);
     }
 
 }
