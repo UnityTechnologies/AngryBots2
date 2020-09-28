@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf2edee5c58d82540a51f03df9d42094, type: 3}
   m_Name: LightweightAsset_HighQuality
   m_EditorClassIdentifier: 
-  k_AssetVersion: 4
+  k_AssetVersion: 5
+  k_AssetPreviousVersion: 5
+  m_RendererType: 1
+  m_RendererData: {fileID: 0}
+  m_RendererDataList:
+  - {fileID: 11400000, guid: faf209e353dee1f4bb55c1c83a032e51, type: 2}
+  m_DefaultRendererIndex: 0
   m_RequireDepthTexture: 0
   m_RequireOpaqueTexture: 1
   m_OpaqueDownsampling: 0
+  m_SupportsTerrainHoles: 1
   m_SupportsHDR: 1
   m_MSAA: 1
   m_RenderScale: 1
@@ -33,12 +40,16 @@ MonoBehaviour:
   m_ShadowDepthBias: 1
   m_ShadowNormalBias: 1
   m_SoftShadowsSupported: 1
+  m_UseSRPBatcher: 1
   m_SupportsDynamicBatching: 1
   m_MixedLightingSupported: 0
+  m_DebugLevel: 0
+  m_UseAdaptivePerformance: 1
+  m_ColorGradingMode: 0
+  m_ColorGradingLutSize: 32
   m_ShadowType: 1
   m_LocalShadowsSupported: 1
   m_LocalShadowsAtlasResolution: 4096
   m_MaxPixelLights: 8
   m_ShadowAtlasResolution: 4096
-  m_ResourcesAsset: {fileID: 11400000, guid: aac5a08c32552a14c89394b703f1978a, type: 2}
   m_ShaderVariantLogLevel: 0
